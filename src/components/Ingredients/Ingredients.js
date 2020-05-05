@@ -82,7 +82,7 @@ const Ingredients = () => {
 
   const clearError = useCallback(() => {
     dispatchHttp({type: 'CLEAR'})
-  })
+  }, [])
 
   const ingredientList = useMemo(() => {
     return (
